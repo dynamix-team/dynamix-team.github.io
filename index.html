@@ -17,55 +17,25 @@ body {
     background-color:#FFFFFF;
 }
 .main {
-    margin-left:15%;
-    margin-right:15%;
-    background-color:#FFFFFF;
-}
-.navbar {
     margin:0;
-    padding:0;
-    background-color:#00596F;
-    overflow:hidden;
-    list-style-type:none;
-}
-.navbar li {
-    float:left;
-}
-.navbar li a:not(.currentPage) {
-    display:block;
-    padding-top:20px;
-    padding-bottom:20px;
-    padding-left:15px;
-    padding-right:15px;
-    color:#FFFFFF;
-    text-decoration:none;
+    background-color:#FFFFFF;
     text-align:center;
-    background-color:#00596F;
-    background:linear-gradient(to bottom,#00596F 50%,#018EAA 50%);
-    background-size:100% 200%;
-    background-position:0% 0%;
 }
-.navbar li a:hover:not(.currentPage) {
-    background-position:0% 100%;
-    -webkit-transition:all 1s ease;
-    transition:all 1s ease;
-}
-.currentPage {
-    display:block;
-    padding-top:20px;
-    padding-bottom:20px;
-    padding-left:15px;
-    padding-right:15px;
+
+.intro {
+    margin:0;
+    padding-top:20%;
+    padding-bottom:20%;
+    background:linear-gradient(to right, #00596F, #018EAA);
     color:#FFFFFF;
-    text-decoration:none;
-    text-align:center;
-    background-color:#018EAA;
 }
+
 footer {
     font-size:75%;
     margin-top:20px;
     text-align:center;
 }
+
 @-webkit-keyframes fadeInUp {
     from {
         opacity:0;
@@ -104,16 +74,12 @@ footer {
 </head>
 
 <body>
-    <ul class="navbar">
-        <li><a href="javascript:navOnClick('explore.html')">Explore</a></li>
-        <li><a href="javascript:navOnClick('events.html')">Events</a></li>
-        <li><a href="javascript:navOnClick('dashboard.html')">Dashboard</a></li>
-        <li><a class="currentPage" href="creator.html">Creator</a></li>
-        <li><a href="javascript:navOnClick('about.html')">About</a></li>
-    </ul>
-    <div class="main fadeInUp">
-        <h1>CPDiscord Development Team</h1>
-        <footer>Copyright (C) 2018-2019 CPDiscord Development Team.</footer>
+    <div class="main">
+        <div class="intro">
+            <h1>Something awesome is coming...</h1>
+            <h2>And the CPDiscord team is building it!</h2>
+        </div>
+        <!--<footer>Copyright (C) 2018-2019 CPDiscord Development Team.</footer>-->
     </div>
 </body>
 </html>
