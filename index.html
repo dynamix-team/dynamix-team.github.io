@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700" rel="stylesheet">
+<script src="wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
 <style>
 body {
     margin:0;
@@ -38,21 +42,7 @@ body {
     font-size:calc(20px + 5vw);
     -webkit-animation-name:fadeInUp;
     animation-name:fadeInUp;
-    -webkit-animation-duration:1s;
-    animation-duration:1s;
-    -webkit-animation-fill-mode:both;
-    animation-fill-mode:both;
-}
-
-.title h2 {
-    margin:0;
-    padding:0;
-    margin-top:-2vw;
-    text-align:left;
-    font-size:calc(20px + 5vw);
-    -webkit-animation-name:fadeInUp;
-    animation-name:fadeInUp;
-    -webkit-animation-delay:0.5s;
+      -webkit-animation-delay:0.5s;
     animation-delay:0.5s;
     -webkit-animation-duration:1s;
     animation-duration:1s;
@@ -60,7 +50,7 @@ body {
     animation-fill-mode:both;
 }
 
-.title h3 {
+.title h2 {
     margin:0;
     padding:0;
     margin-top:-2vw;
@@ -76,36 +66,89 @@ body {
     animation-fill-mode:both;
 }
 
-.motto {
-    width:calc(200px + 25vw);
-    padding-left:5%;
-    font-size:calc(14px + 1vw);
+.title h3 {
+    margin:0;
+    padding:0;
+    margin-top:-2vw;
+    text-align:left;
+    font-size:calc(20px + 5vw);
     -webkit-animation-name:fadeInUp;
     animation-name:fadeInUp;
-    -webkit-animation-delay:1s;
-    animation-delay:2s;
+    -webkit-animation-delay:1.5s;
+    animation-delay:1.5s;
     -webkit-animation-duration:1s;
     animation-duration:1s;
     -webkit-animation-fill-mode:both;
     animation-fill-mode:both;
 }
 
-.contributors {
+.motto {
+    width:calc(200px + 25vw);
+    padding-left:5%;
+    font-size:calc(14px + 1vw);
+    -webkit-animation-name:fadeInUp;
+    animation-name:fadeInUp;
+    -webkit-animation-delay:2.5s;
+    animation-delay:2.5s;
+    -webkit-animation-duration:1s;
+    animation-duration:1s;
+    -webkit-animation-fill-mode:both;
+    animation-fill-mode:both;
+}
+
+.team {
     text-align:center;
 }
 
 .profile {
-    background-color:#E4E4E4;
+    margin:auto;
+    margin:5px;
+    padding:1em;
+    background-color:#F4F4F4;
     width:15em;
-    font-size:calc(14px + 0.5vw);
-    padding-top:1em;
-    padding-bottom:1em;
+    display:inline-block;
+    border-radius:5%;
 }
 
-footer {
-    font-size:75%;
-    margin-top:20px;
+.profile a {
+    text-decoration:none;
+}
+
+.username {
+    margin:0;
+    margin-top:1vw;
+    padding:0;
+    font-size:calc(14px + 1vh);
+}
+
+.description {
+    margin:0;
+    margin-bottom:1vh;
+    font-size:calc(12px + 0.5vh);
+    color:#3D3D3D;
+}
+
+.avatar {
+    height:calc(128px + 2vh);
+    width:calc(128px + 2vh);
+    border-radius:50%;
+}
+
+.icon {
+    margin:0;
+    padding:0;
+    height:calc(16px + 1vh);
+    width:(16px + 1vh);
+}
+
+.footer {
+    margin:0;
+    margin-top:30px;
+    padding:20px;
     text-align:center;
+    font-size:80%;
+    background-color:#000000;
+    color:#FFFFFF;
 }
 
 @-webkit-keyframes fadeInUp {
@@ -137,10 +180,12 @@ footer {
 .fadeInUp {
     -webkit-animation-name:fadeInUp;
     animation-name:fadeInUp;
-    -webkit-animation-duration:1s;
-    animation-duration:1s;
+    -webkit-animation-duration:2s;
+    animation-duration:2s;
     -webkit-animation-fill-mode:both;
     animation-fill-mode:both;
+    -webkit-animation-delay:0.5s;
+    animation-delay:0.5s;
 }
 </style>
 
@@ -159,14 +204,90 @@ footer {
                 <p>Paving pathways for students to learn about cybersecurity and information technology</p>
             </div>
         </div>
-        <div class="contributors">
-            <h1>Official Contributors</h1>
+        <div class="wow fadeInUp team">
+            <h1>Official Team</h1>
+            <div class="wow fadeInUp">
             <div class="profile">
-                <p>John Doe</p>
-                <a href="https://github.com/">GitHub</a>
+                <img src="profiles/Anthony_Boatcallie.png" class="avatar"></img>
+                <p class="username">Anthony Boatcallie</p>
+                <p class="description">Lead Developer</p>
+                <a href="https://www.shiversoft.net/">
+                    <img src="icons/web.png" class="icon"></img>
+                </a>
+                <a href="https://github.com/aboatcallie">
+                    <img src="icons/github.png" class="icon"></img>
+                </a>
+                <a href="https://www.twitch.tv/shiversoftdev">
+                    <img src="icons/twitch.png" class="icon"></img>
+                </a>
+            </div>
+            <div class="profile">
+                <img src="profiles/Brendan.png" class="avatar"></img>
+                <p class="username">Brendan</p>
+                <p class="description">Public Relations</p>
+                <a href="https://brendancyber.com/">
+                    <img src="icons/web.png" class="icon"></img>
+                </a>
+                <a href="https://github.com/james8bc">
+                    <img src="icons/github.png" class="icon"></img>
+                </a>
+            </div>
+            <div class="profile">
+                <img src="profiles/Artitus.png" class="avatar"></img>
+                <p class="username">Mason Herbel (Artitus)</p>
+                <p class="description">Lead Web</p>
+                <a href="https://github.com/Artitus">
+                    <img src="icons/github.png" class="icon"></img>
+                </a>
+                <a href="https://twitter.com/artitus">
+                    <img src="icons/twitter.png" class="icon"></img>
+                </a>
+            </div>
+            <div class="profile">
+                <img src="profiles/Mat2567.png" class="avatar"></img>
+                <p class="username">mat2567</p>
+                <p class="description">Web</p>
+                <a href="https://github.com/mat2567">
+                    <img src="icons/github.png" class="icon"></img>
+                </a>
+            </div>
+            <div class="profile">
+                <img src="profiles/Matthew.png" class="avatar"></img>
+                <p class="username">Matthew</p>
+                <p class="description">Repo Manager</p>
+                <a href="https://github.com/matthewzring">
+                    <img src="icons/github.png" class="icon"></img>
+                </a>
+            </div>
+            <div class="profile">
+                <img src="profiles/RainbowDynamix.png" class="avatar"></img>
+                <p class="username">RainbowDynamix</p>
+                <p class="description">Founder and Developer</p>
+                <a href="https://github.com/RainbowDynamix">
+                    <img src="icons/github.png" class="icon"></img>
+                </a>
+            </div>
+            <div class="profile">
+                <img src="profiles/TheiMacNoob.png" class="avatar"></img>
+                <p class="username">TheiMacNoob</p>
+                <p class="description">Developer</p>
+                <a href="https://github.com/TheiMacNoob">
+                    <img src="icons/github.png" class="icon"></img>
+                </a>
+            </div>
+            <div class="profile">
+                <img src="profiles/WhiteHoodHacker.png" class="avatar"></img>
+                <p class="username">WhiteHoodHacker</p>
+                <p class="description">Web and Graphics</p>
+                <a href="https://github.com/WhiteHoodHacker">
+                    <img src="icons/github.png" class="icon"></img>
+                </a>
+            </div>
             </div>
         </div>
-        <!--<footer>Copyright (C) 2018-2019 Dynamix Development Team.</footer>-->
+        <div class="footer">
+            <p>Copyright (C) 2018-2019 Dynamix Development Team.</p>
+        </div>
     </div>
 </body>
 </html>
