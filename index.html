@@ -16,6 +16,7 @@ body {
     font-family:Roboto, Arial;
     background-color:#FFFFFF;
 }
+
 .main {
     margin:0;
     background-color:#FFFFFF;
@@ -34,8 +35,7 @@ body {
     margin:0;
     padding:0;
     text-align:left;
-    font-size:4vw;
-    color:#FFFFFF;
+    font-size:calc(20px + 5vw);
     -webkit-animation-name:fadeInUp;
     animation-name:fadeInUp;
     -webkit-animation-duration:1s;
@@ -46,10 +46,10 @@ body {
 
 .intro h2 {
     margin:0;
-    margin-top:-1.7vw;
-    padding-top:0;
+    padding:0;
+    margin-top:-2vw;
     text-align:left;
-    font-size:4vw;
+    font-size:calc(20px + 5vw);
     -webkit-animation-name:fadeInUp;
     animation-name:fadeInUp;
     -webkit-animation-delay:0.5s;
@@ -62,10 +62,10 @@ body {
 
 .intro h3 {
     margin:0;
-    margin-top:-1.7vw;
-    padding-top:0;
+    padding:0;
+    margin-top:-2vw;
     text-align:left;
-    font-size:4vw;
+    font-size:calc(20px + 5vw);
     -webkit-animation-name:fadeInUp;
     animation-name:fadeInUp;
     -webkit-animation-delay:1s;
@@ -74,6 +74,15 @@ body {
     animation-duration:1s;
     -webkit-animation-fill-mode:both;
     animation-fill-mode:both;
+}
+
+.title {
+    margin-left:5%;
+}
+
+.motto {
+    float:left;
+    
 }
 
 footer {
@@ -122,9 +131,14 @@ footer {
 <body>
     <div class="main">
         <div class="intro">
-            <h1>We are</h1>
-            <h2>Dynamix</h2>
-            <h3>Development</h3>
+            <div class="title">
+                <h1>We are</h1>
+                <h2>Dynamix</h2>
+                <h3>Development</h3>
+            </div>
+            <div class="motto">
+                <p>Paving pathways for students to learn about cybersecurity and information technology</p>
+            </div>
         </div>
         <div class="contributors">
             <h1>Official Contributors</h1>
