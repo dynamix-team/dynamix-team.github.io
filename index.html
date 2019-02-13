@@ -4,12 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700" rel="stylesheet">
-    <link href="animate.css" rel="stylesheet">
-<script>
-function navOnClick(URL) {
-    setTimeout(function() {window.location = URL}, 1100);
-}
-</script>
 <style>
 body {
     margin:0;
@@ -20,18 +14,24 @@ body {
 .main {
     margin:0;
     background-color:#FFFFFF;
-    text-align:center;
 }
 
 .intro {
     margin:0;
-    padding-top:20%;
-    padding-bottom:20%;
+    display:block;
     background:linear-gradient(to right, #00596F, #018EAA);
     color:#FFFFFF;
+    height:100vh;
 }
 
-.intro h1 {
+.title {
+    margin:0;
+    padding-top:25vh;
+    padding-left:5%;
+    display:inline-block;
+}
+
+.title h1 {
     margin:0;
     padding:0;
     text-align:left;
@@ -44,7 +44,7 @@ body {
     animation-fill-mode:both;
 }
 
-.intro h2 {
+.title h2 {
     margin:0;
     padding:0;
     margin-top:-2vw;
@@ -60,7 +60,7 @@ body {
     animation-fill-mode:both;
 }
 
-.intro h3 {
+.title h3 {
     margin:0;
     padding:0;
     margin-top:-2vw;
@@ -76,13 +76,22 @@ body {
     animation-fill-mode:both;
 }
 
-.title {
-    margin-left:5%;
+.motto {
+    width:calc(200px + 25vw);
+    padding-left:5%;
+    font-size:calc(14px + 1vw);
+    -webkit-animation-name:fadeInUp;
+    animation-name:fadeInUp;
+    -webkit-animation-delay:1s;
+    animation-delay:2s;
+    -webkit-animation-duration:1s;
+    animation-duration:1s;
+    -webkit-animation-fill-mode:both;
+    animation-fill-mode:both;
 }
 
-.motto {
-    float:left;
-    
+.contributors {
+    text-align:center;
 }
 
 footer {
@@ -103,6 +112,7 @@ footer {
         transform:translate3d(0,0,0);
     }
 }
+
 @keyframes fadeInUp {
     from {
         opacity:0;
@@ -115,6 +125,7 @@ footer {
         transform:translate3d(0,0,0);
     }
 }
+
 .fadeInUp {
     -webkit-animation-name:fadeInUp;
     animation-name:fadeInUp;
@@ -142,6 +153,7 @@ footer {
         </div>
         <div class="contributors">
             <h1>Official Contributors</h1>
+            
         </div>
         <!--<footer>Copyright (C) 2018-2019 Dynamix Development Team.</footer>-->
     </div>
