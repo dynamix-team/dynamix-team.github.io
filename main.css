@@ -1,0 +1,209 @@
+body {
+    margin:0;
+    font-family:Roboto, Arial;
+    background-color:#FFFFFF;
+}
+
+.main {
+    margin:0;
+    background-color:#FFFFFF;
+}
+
+.introContainer {
+    margin:0;
+    display:block;
+    background:linear-gradient(to right, #00596F, #009DBC);
+    color:#FFFFFF;
+    height:100vh;
+}
+
+.title {
+    margin:0;
+    padding-top:25vh;
+    padding-left:5%;
+    display:inline-block;
+}
+
+.title h1 {
+    margin:0;
+    padding:0;
+    text-align:left;
+    font-size:calc(20px + 5vw);
+    -webkit-animation-name:fadeInUp;
+    animation-name:fadeInUp;
+      -webkit-animation-delay:0.5s;
+    animation-delay:0.5s;
+    -webkit-animation-duration:1s;
+    animation-duration:1s;
+    -webkit-animation-fill-mode:both;
+    animation-fill-mode:both;
+}
+
+.title h2 {
+    margin:0;
+    padding:0;
+    margin-top:-2vw;
+    text-align:left;
+    font-size:calc(20px + 5vw);
+    -webkit-animation-name:fadeInUp;
+    animation-name:fadeInUp;
+    -webkit-animation-delay:1s;
+    animation-delay:1s;
+    -webkit-animation-duration:1s;
+    animation-duration:1s;
+    -webkit-animation-fill-mode:both;
+    animation-fill-mode:both;
+}
+
+.title h3 {
+    margin:0;
+    padding:0;
+    margin-top:-2vw;
+    text-align:left;
+    font-size:calc(20px + 5vw);
+    -webkit-animation-name:fadeInUp;
+    animation-name:fadeInUp;
+    -webkit-animation-delay:1.5s;
+    animation-delay:1.5s;
+    -webkit-animation-duration:1s;
+    animation-duration:1s;
+    -webkit-animation-fill-mode:both;
+    animation-fill-mode:both;
+}
+
+.motto {
+    width:calc(200px + 25vw);
+    padding-left:5%;
+    font-size:calc(14px + 1vw);
+    -webkit-animation-name:fadeInUp;
+    animation-name:fadeInUp;
+    -webkit-animation-delay:2.5s;
+    animation-delay:2.5s;
+    -webkit-animation-duration:1s;
+    animation-duration:1s;
+    -webkit-animation-fill-mode:both;
+    animation-fill-mode:both;
+}
+
+.projectContainer {
+
+}
+
+.teamContainer {
+    text-align:center;
+    max-width:75em;
+    margin:auto;
+}
+
+.profile {
+    margin:5px;
+    padding:1em;
+    background-color:#F4F4F4;
+    width:15em;
+    display:inline-block;
+    border-radius:5%;
+}
+
+.profile a {
+    text-decoration:none;
+}
+
+.username {
+    margin:0;
+    margin-top:1vw;
+    padding:0;
+    font-size:calc(14px + 1vh);
+}
+
+.description {
+    margin:0;
+    margin-bottom:1vh;
+    font-size:calc(12px + 0.5vh);
+    color:#3D3D3D;
+}
+
+.avatar {
+    height:calc(128px + 2vh);
+    width:calc(128px + 2vh);
+    border-radius:50%;
+}
+
+.icon {
+    margin:0;
+    padding:0;
+    height:calc(16px + 1vh);
+    width:(16px + 1vh);
+}
+
+.footer {
+    margin:0;
+    margin-top:30px;
+    padding:20px;
+    text-align:center;
+    font-size:80%;
+    background-color:#000000;
+    color:#FFFFFF;
+}
+
+.fadeIn {
+    -webkit-animation-name:fadeIn;
+    animation-name:fadeIn;
+    -webkit-animation-duration:1s;
+    animation-duration:1s;
+    -webkit-animation-fill-mode:both;
+    animation-fill-mode:both;
+    -webkit-animation-delay:0.5s;
+    animation-delay:0.5s;
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        opacity:0;
+        -webkit-transform:translate3d(0,100%,0);
+        transform:translate3d(0,100%,0);
+    }
+    to {
+        opacity:1;
+        -webkit-transform:translate3d(0,0,0);
+        transform:translate3d(0,0,0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity:0;
+        -webkit-transform:translate3d(0,100%,0);
+        transform:translate3d(0,100%,0);
+    }
+    to {
+        opacity:1;
+        -webkit-transform:translate3d(0,0,0);
+        transform:translate3d(0,0,0);
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity:0;
+        -webkit-transform:translate3d(0,5%,0);
+        transform:translate3d(0,5%,0);
+    }
+    to {
+        opacity:1;
+        -webkit-transform:translate3d(0,0,0);
+        transform:translate3d(0,0,0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity:0;
+        -webkit-transform:translate3d(0,5%,0);
+        transform:translate3d(0,5%,0);
+    }
+    to {
+        opacity:1;
+        -webkit-transform:translate3d(0,0,0);
+        transform:translate3d(0,0,0);
+    }
+}
