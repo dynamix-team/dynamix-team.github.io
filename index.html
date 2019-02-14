@@ -20,10 +20,10 @@ body {
     background-color:#FFFFFF;
 }
 
-.intro {
+.introContainer {
     margin:0;
     display:block;
-    background:linear-gradient(to right, #00596F, #018EAA);
+    background:linear-gradient(to right, #00596F, #009DBC);
     color:#FFFFFF;
     height:100vh;
 }
@@ -96,12 +96,17 @@ body {
     animation-fill-mode:both;
 }
 
-.team {
+.projectContainer {
+
+}
+
+.teamContainer {
     text-align:center;
+    max-width:75em;
+    margin:auto;
 }
 
 .profile {
-    margin:auto;
     margin:5px;
     padding:1em;
     background-color:#F4F4F4;
@@ -214,13 +219,12 @@ body {
     }
 }
 </style>
-
     <title>Dynamix Development Team</title>
 </head>
 
 <body>
     <div class="main">
-        <div class="intro">
+        <div class="introContainer">
             <div class="title">
                 <h1>We are</h1>
                 <h2>Dynamix</h2>
@@ -230,9 +234,13 @@ body {
                 <p>Paving pathways for students to learn about cybersecurity and information technology</p>
             </div>
         </div>
-        <div class="wow fadeIn team">
+        <div class="projectContainer">
+
+        </div>
+        <div class="wow fadeIn teamContainer">
             <h1>Official Team</h1>
             <div class="wow fadeIn">
+            <!--There's probably a more efficient way of managin the profiles, but I'm too lazy to figure it out-->
             <div class="profile">
                 <img src="profiles/Anthony_Boatcallie.png" class="avatar"></img>
                 <p class="username">Anthony Boatcallie</p>
@@ -280,7 +288,7 @@ body {
             <div class="profile">
                 <img src="profiles/Matthew.png" class="avatar"></img>
                 <p class="username">Matthew</p>
-                <p class="description">Repository Manager</p>
+                <p class="description">Developer</p>
                 <a href="https://github.com/matthewzring">
                     <img src="icons/github.png" class="icon"></img>
                 </a>
